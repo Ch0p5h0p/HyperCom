@@ -5,6 +5,7 @@
 - [ ] C client & server
 
 ## C client and server project structure
+```
 client
 - client.c (entrypoint)
 - networking.c (networking stuff)
@@ -16,3 +17,4 @@ server
 - networking.c (networking stuff)
 - routing.c (handles message routing)
 - crypto.c (kex, negotiations, challenges, etc)
+```
