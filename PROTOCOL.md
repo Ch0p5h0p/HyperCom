@@ -1,6 +1,6 @@
-# The HyperCom Protocol
+# The SIRC Protocol
 
-HyperCom aims to be secure. As such, there are some steps in encryption to maintain that security.
+SIRC aims to be secure. As such, there are some steps in encryption to maintain that security.
 
 Before we start, here are the ciphers that are the "default" ones. Use whichever you like, but if you aren't familiar with them, these are good ones to use:
 - Key exchange and encryption: X25519
@@ -18,7 +18,7 @@ If the server can't verify your keys, the attempt is rejected with error code 1.
 ## Servers
 A server stores a few registries to keep everything in order:
 ### Users
-The user registry is basically a dictionary, and maps public keys to nicks. On a HyperCom server, your identity is your public key. Alongside your nick, the server also maintains permissions and parameters related to you, such as operator status, timestamp of last sent message timestamp (UNIX epoch ms), etc.
+The user registry is basically a dictionary, and maps public keys to nicks. On a SIRC server, your identity is your public key. Alongside your nick, the server also maintains permissions and parameters related to you, such as operator status, timestamp of last sent message timestamp (UNIX epoch ms), etc.
 ### Blacklist
 The blacklist registry includes both public keys and IPs that are prohibited from joining, and will be rejected upon authentication.
 ### Channels
