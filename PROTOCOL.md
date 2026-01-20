@@ -2,6 +2,10 @@
 
 HyperCom aims to be secure. As such, there are some steps in encryption to maintain that security.
 
+Before we start, here are the ciphers that are the "default" ones. Use whichever you like, but if you aren't familiar with them, these are good ones to use:
+- Key exchange and encryption: X25519
+- Signing and verification: Ed25519
+
 ## Authentication
 When a client registers a public key with a server for the first time, these steps happen:
 1. Client "hello": Client sends its public key
